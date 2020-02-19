@@ -1,5 +1,17 @@
-// 翻转字符串
+/*
+输入: "Let's take LeetCode contest"
+输出: "s'teL ekat edoCteeL tsetnoc" 
+注意：在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。
 
-export default (str) => {
-    return '123';
-}
+https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/
+*/
+
+// export default (str) => {
+//     let arr = str.split(' ');
+//     let result = arr.map(item => item.split('').reverse().join(''));
+//     return result.join(' ');
+// }
+
+
+// split(' ') 也可以写成正则形式 split(/\s/g)
+export default (str) => str.split(' ').map(item => item.split('').reverse().join('')).join(' ');

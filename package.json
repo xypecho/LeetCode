@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "jest": {
-    "testRegex": "test/.*\\.test\\.js$"
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.[jt]sx?$"
   },
   "repository": {
     "type": "git",
