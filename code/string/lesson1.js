@@ -6,6 +6,7 @@
 https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/
 */
 
+// 写法1，最通俗易懂的版本
 // export default (str) => {
 //     let arr = str.split(' ');
 //     let result = arr.map(item => item.split('').reverse().join(''));
@@ -13,5 +14,7 @@ https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/
 // }
 
 
+
+// 写法2，精简代码
 // split(' ') 也可以写成正则形式 split(/\s/g)
 export default (str) => str.split(' ').map(item => item.split('').reverse().join('')).join(' ');
